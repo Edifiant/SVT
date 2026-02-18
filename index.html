@@ -222,18 +222,28 @@
     }
 
     function startGame() {
-        if(!currentThemeData.length) return alert("Choisis un thème d'abord !");
-        gameActive = true;
-        document.getElementById('start-btn').style.display = "none";
-        document.getElementById('quiz-input').disabled = false;
-        document.getElementById('quiz-input').focus();
-        nextQuestion();
-        timerInterval = setInterval(() => {
-            timeLeft--;
-            document.getElementById('timer-ui').innerText = "⏱️ " + timeLeft + "s";
-            if(timeLeft <= 0) endGame();
-        }, 1000);
-    }
+    if(!currentThemeData.length) return alert("Choisis un thème d'abord !");
+    
+    // REINITIALISATION ICI
+    gameActive = true;
+    score = 0;
+    timeLeft = 60;
+    document.getElementById('score-ui').innerText = "🧬 0";
+    document.getElementById('timer-ui').innerText = "⏱️ 60s";
+    
+    document.getElementById('start-btn').style.display = "none";
+    document.getElementById('quiz-input').disabled = false;
+    document.getElementById('quiz-input').focus();
+    nextQuestion();
+
+    // On efface un éventuel intervalle encore actif avant d'en créer un nouveau
+    clearInterval(timerInterval); 
+    timerInterval = setInterval(() => {
+        timeLeft--;
+        document.getElementById('timer-ui').innerText = "⏱️ " + timeLeft + "s";
+        if(timeLeft <= 0) endGame();
+    }, 1000);
+}
 
     function nextQuestion() {
         const rand = Math.floor(Math.random() * currentThemeData.length);
