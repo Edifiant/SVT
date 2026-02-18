@@ -44,18 +44,11 @@
         .active-theme { outline: 3px solid var(--dark); outline-offset: 2px; position: relative; z-index: 10; }
 
         #display-panel {
-            width: 95%; max-width: 800px; min-height: 150px;
+            width: 95%; max-width: 800px; min-height: 120px;
             background: var(--dark); color: white; padding: 20px;
-            border-radius: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center;
+            border-radius: 20px; display: flex; align-items: center; justify-content: center;
             text-align: center; font-size: 1.1rem; margin-bottom: 20px;
             border-bottom: 6px solid #bdc3c7; line-height: 1.5; box-sizing: border-box;
-        }
-
-        /* Style pour les images dans le panneau */
-        #display-panel img {
-            max-width: 100%; height: auto; margin-top: 15px;
-            border-radius: 10px; border: 3px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3); background: white;
         }
 
         #words-area {
@@ -102,8 +95,8 @@
 
     <section id="quiz-section">
         <div class="stats">
-            <span id="timer-ui">⏱️ 60s</span>
-            <span id="score-ui">🧬 0</span>
+            <span id="timer-ui">   60s</span>
+            <span id="score-ui">   0</span>
         </div>
         <div id="quiz-definition">Prêt pour l'entraînement ?</div>
         <input type="text" id="quiz-input" placeholder="Écris le mot ici..." disabled autocomplete="off" spellcheck="false">
@@ -117,7 +110,7 @@
             colors: ['#44bd32'],
             themes: [
                 { title: "Bases de la SVT (6ème)", data: [
-                    ["Cellule", "Unité de base de tous les êtres vivants.", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Animal_cell_structure_fr.svg/512px-Animal_cell_structure_fr.svg.png"],
+                    ["Cellule", "Unité de base de tous les êtres vivants."],
                     ["Unicellulaire", "Être vivant formé d'une seule cellule."],
                     ["Pluricellulaire", "Être vivant formé de plusieurs cellules."],
                     ["Biodiversité", "Diversité des espèces vivantes dans un milieu."],
@@ -147,15 +140,15 @@
             colors: ['#e1b12c', '#4cd137', '#e84118', '#2f3542'],
             themes: [
                 { title: "T1 : Terre et Environnement", data: [
-                    ["Séisme", "Tremblement de terre causé par la rupture brutale des roches en profondeur."], ["Épicentre", "Point de la surface terrestre où le séisme est le plus intense."], ["Foyer", "Lieu en profondeur où débute la rupture des roches à l'origine du séisme."], ["Magnitude", "Mesure de l'énergie libérée par un séisme (Échelle de Richter)."], ["Sismogramme", "Enregistrement des ondes sismiques réalisé par un sismographe."], ["Volcanisme", "Arrivée de magma en surface formant des édifices volcaniques."], ["Magma", "Roche fondue située en profondeur, contenant du gaz."], ["Lave", "Magma débarrassé de son gaz qui coule à la surface."], ["Chambre magmatique", "Réservoir de magma situé à plusieurs kilomètres de profondeur."], ["Lithosphère", "Couche rigide de la Terre formée de la croûte et du manteau supérieur."], ["Asthénosphère", "Couche moins rigide du manteau située sous la lithosphère."], ["Tectonique des plaques", "Théorie décrivant les mouvements des plaques lithosphériques."], ["Dorsale", "Chaîne de montagnes sous-marine, zone d'écartement des plaques.", "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Oceanic_spreading_fr.svg/512px-Oceanic_spreading_fr.svg.png"], ["Subduction", "Enfouissement d'une plaque océanique sous une autre plaque.", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Subduction-fr.svg/512px-Subduction-fr.svg.png"], ["Collision", "Rencontre entre deux plaques continentales formant des montagnes."], ["Accrétion", "Formation de nouvelle croûte océanique au niveau des dorsales."], ["Fosse océanique", "Dépression profonde et allongée, zone de subduction."], ["Risque", "Possibilité qu'un aléa (danger naturel) touche des enjeux (humains)."], ["Aléa", "Probabilité qu'un phénomène naturel dangereux survienne."], ["Enjeu", "Personnes ou biens susceptibles d'être touchés par un aléa."], ["Météorologie", "Étude du temps qu'il fait à court terme (température, vent)."], ["Climat", "Moyenne des conditions météorologiques sur une longue période (30 ans)."], ["Effet de serre", "Phénomène naturel retenant la chaleur solaire sur Terre."], ["Atmosphère", "Couche de gaz entourant la Terre."], ["Hydrosphère", "Ensemble de l'eau présente sur Terre (liquide, solide, gaz)."], ["Érosion", "Usure et transport des roches par l'eau, le vent ou la glace."], ["Sédimentation", "Dépôt de particules transportées (sédiments) au fond de l'eau."], ["Fossile", "Reste ou trace d'être vivant conservé dans une roche sédimentaire."], ["Affleurement", "Endroit où les roches du sous-sol sont visibles en surface."], ["Ressource renouvelable", "Ressource qui se régénère à l'échelle humaine (vent, soleil, bois)."], ["Énergie fossile", "Énergie non renouvelable issue de la transformation de matière organique (pétrole)."], ["Nappe phréatique", "Réserve d'eau souterraine contenue dans les roches."], ["Écosystème", "Ensemble formé par un milieu de vie et les êtres vivants qui y habitent."], ["Biodiversité", "Diversité des êtres vivants (espèces, gènes, écosystèmes)."], ["Développement durable", "Développement répondant aux besoins actuels sans compromettre l'avenir."], ["Pollution", "Dégradation de l'environnement par des substances nocives."], ["Recyclage", "Traitement des déchets pour produire de nouveaux matériaux."], ["Courant marin", "Déplacement d'eau de mer régulier, continu et cyclique."], ["Pression atmosphérique", "Poids de l'air, mesuré en Pascal ou en Bar."], ["Anticyclone", "Zone de haute pression atmosphérique (souvent synonyme de beau temps)."], ["Dépression", "Zone de basse pression atmosphérique (souvent synonyme de mauvais temps)."], ["Précipitations", "Eau qui tombe des nuages (pluie, neige, grêle)."], ["Anémomètre", "Instrument servant à mesurer la vitesse du vent."], ["Réchauffement climatique", "Augmentation globale des températures due aux activités humaines."], ["Glacier", "Masse de glace persistante formée par l'accumulation de neige."], ["Cycle de l'eau", "Circulation perpétuelle de l'eau entre les différents réservoirs terrestres.", "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Water_cycle_blank.svg/512px-Water_cycle_blank.svg.png"], ["Perméabilité", "Capacité d'une roche à laisser passer l'eau."], ["Argile", "Roche sédimentaire imperméable."], ["Calcaire", "Roche sédimentaire souvent riche en fossiles."], ["Biomasse", "Masse totale des êtres vivants dans un écosystème."]
+                    ["Séisme", "Tremblement de terre causé par la rupture brutale des roches en profondeur."], ["Épicentre", "Point de la surface terrestre où le séisme est le plus intense."], ["Foyer", "Lieu en profondeur où débute la rupture des roches à l'origine du séisme."], ["Magnitude", "Mesure de l'énergie libérée par un séisme (Échelle de Richter)."], ["Sismogramme", "Enregistrement des ondes sismiques réalisé par un sismographe."], ["Volcanisme", "Arrivée de magma en surface formant des édifices volcaniques."], ["Magma", "Roche fondue située en profondeur, contenant du gaz."], ["Lave", "Magma débarrassé de son gaz qui coule à la surface."], ["Chambre magmatique", "Réservoir de magma situé à plusieurs kilomètres de profondeur."], ["Lithosphère", "Couche rigide de la Terre formée de la croûte et du manteau supérieur."], ["Asthénosphère", "Couche moins rigide du manteau située sous la lithosphère."], ["Tectonique des plaques", "Théorie décrivant les mouvements des plaques lithosphériques."], ["Dorsale", "Chaîne de montagnes sous-marine, zone d'écartement des plaques."], ["Subduction", "Enfouissement d'une plaque océanique sous une autre plaque."], ["Collision", "Rencontre entre deux plaques continentales formant des montagnes."], ["Accrétion", "Formation de nouvelle croûte océanique au niveau des dorsales."], ["Fosse océanique", "Dépression profonde et allongée, zone de subduction."], ["Risque", "Possibilité qu'un aléa (danger naturel) touche des enjeux (humains)."], ["Aléa", "Probabilité qu'un phénomène naturel dangereux survienne."], ["Enjeu", "Personnes ou biens susceptibles d'être touchés par un aléa."], ["Météorologie", "Étude du temps qu'il fait à court terme (température, vent)."], ["Climat", "Moyenne des conditions météorologiques sur une longue période (30 ans)."], ["Effet de serre", "Phénomène naturel retenant la chaleur solaire sur Terre."], ["Atmosphère", "Couche de gaz entourant la Terre."], ["Hydrosphère", "Ensemble de l'eau présente sur Terre (liquide, solide, gaz)."], ["Érosion", "Usure et transport des roches par l'eau, le vent ou la glace."], ["Sédimentation", "Dépôt de particules transportées (sédiments) au fond de l'eau."], ["Fossile", "Reste ou trace d'être vivant conservé dans une roche sédimentaire."], ["Affleurement", "Endroit où les roches du sous-sol sont visibles en surface."], ["Ressource renouvelable", "Ressource qui se régénère à l'échelle humaine (vent, soleil, bois)."], ["Énergie fossile", "Énergie non renouvelable issue de la transformation de matière organique (pétrole)."], ["Nappe phréatique", "Réserve d'eau souterraine contenue dans les roches."], ["Écosystème", "Ensemble formé par un milieu de vie et les êtres vivants qui y habitent."], ["Biodiversité", "Diversité des êtres vivants (espèces, gènes, écosystèmes)."], ["Développement durable", "Développement répondant aux besoins actuels sans compromettre l'avenir."], ["Pollution", "Dégradation de l'environnement par des substances nocives."], ["Recyclage", "Traitement des déchets pour produire de nouveaux matériaux."], ["Courant marin", "Déplacement d'eau de mer régulier, continu et cyclique."], ["Pression atmosphérique", "Poids de l'air, mesuré en Pascal ou en Bar."], ["Anticyclone", "Zone de haute pression atmosphérique (souvent synonyme de beau temps)."], ["Dépression", "Zone de basse pression atmosphérique (souvent synonyme de mauvais temps)."], ["Précipitations", "Eau qui tombe des nuages (pluie, neige, grêle)."], ["Anémomètre", "Instrument servant à mesurer la vitesse du vent."], ["Réchauffement climatique", "Augmentation globale des températures due aux activités humaines."], ["Glacier", "Masse de glace persistante formée par l'accumulation de neige."], ["Cycle de l'eau", "Circulation perpétuelle de l'eau entre les différents réservoirs terrestres."], ["Perméabilité", "Capacité d'une roche à laisser passer l'eau."], ["Argile", "Roche sédimentaire imperméable."], ["Calcaire", "Roche sédimentaire souvent riche en fossiles."], ["Biomasse", "Masse totale des êtres vivants dans un écosystème."]
                 ]},
                 { title: "T2 : Le Vivant et son évolution", data: [
-                    ["Cellule", "Unité microscopique structurelle et fonctionnelle de tout être vivant.", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Animal_cell_structure_fr.svg/512px-Animal_cell_structure_fr.svg.png"], ["Membrane", "Enveloppe qui délimite la cellule."], ["Cytoplasme", "Gelée interne de la cellule contenant les organites."], ["Noyau", "Partie de la cellule contenant l'information génétique (ADN)."], ["Unicellulaire", "Être vivant constitué d'une seule cellule."], ["Pluricellulaire", "Être vivant constitué de plusieurs cellules."], ["Espèce", "Groupe d'êtres vivants se ressemblant et pouvant se reproduire entre eux."], ["Évolution", "Transformation des espèces au cours du temps (générations)."], ["Sélection naturelle", "Avantage reproductif des individus les mieux adaptés à leur milieu."], ["Ancêtre commun", "Organisme hypothétique dont descendent plusieurs espèces actuelles."], ["Arbre de parenté", "Schéma montrant les liens de parenté entre les espèces (phylogénie)."], ["Caractère", "Trait physique ou physiologique d'un individu (ex : couleur des yeux)."], ["Héréditaire", "Qui se transmet des parents aux descendants."], ["ADN", "Molécule en forme de double hélice portant l'information génétique."], ["Chromosome", "Filament d'ADN visible lors de la division cellulaire.", "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Chromosome_en.svg/512px-Chromosome_en.svg.png"], ["Gène", "Portion d'ADN portant l'information d'un caractère précis."], ["Allèle", "Version possible d'un gène (ex : allèle bleu ou marron)."], ["Caryotype", "Classement ordonné des chromosomes d'une cellule."], ["Génotype", "Ensemble des allèles d'un individu."], ["Phénotype", "Ensemble des caractères observables d'un individu."], ["Mutation", "Modification accidentelle de la séquence d'ADN."], ["Mitose", "Division cellulaire conforme (2 cellules identiques).", "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Events_in_mitosis.svg/512px-Events_in_mitosis.svg.png"], ["Méiose", "Division cellulaire produisant les gamètes (réduction du nombre de chromosomes)."], ["Gamète", "Cellule reproductrice (spermatozoïde ou ovule)."], ["Fécondation", "Fusion d'un spermatozoïde et d'un ovule."], ["Cellule-œuf", "Première cellule d'un nouvel individu après fécondation."], ["Reproduction sexuée", "Reproduction nécessitant deux parents et des gamètes."], ["Reproduction asexuée", "Reproduction sans gamètes (bouturage, division)."], ["Puberté", "Période de transition de l'enfance à l'âge adulte (capacité reproductrice)."], ["Hormone", "Messager chimique transporté par le sang."], ["Ovaire", "Organe producteur des ovules et d'hormones féminines."], ["Testicule", "Organe producteur des spermatozoïdes et de testostérone."], ["Contraception", "Méthodes temporaires pour éviter une grossesse."], ["Placenta", "Organe d'échanges entre la mère et le fœtus."], ["Photosynthèse", "Production de matière organique par les plantes à la lumière."], ["Chlorophylle", "Pigment vert des plantes captant l'énergie lumineuse."], ["Stomate", "Orifice sur les feuilles permettant les échanges gazeux."], ["Sève brute", "Eau et sels minéraux montant des racines."], ["Sève élaborée", "Eau et matière organique (sucre) circulant dans la plante."], ["Symbiose", "Association durable et bénéfique entre deux êtres vivants."], ["Mycorhize", "Symbiose entre un champignon et les racines d'une plante."], ["Matière organique", "Matière produite par les vivants (riche en carbone)."], ["Matière minérale", "Matière inerte (eau, roches, sels minéraux)."], ["Décomposeur", "Organisme qui transforme la matière organique en matière minérale."], ["Réseau trophique", "Ensemble des chaînes alimentaires reliées entre elles."], ["Producteur primaire", "Végétal chlorophyllien premier maillon de la chaîne alimentaire."], ["Crise biologique", "Extinction massive d'espèces sur une courte période géologique."], ["Trilobite", "Arthropode marin fossile fréquent dans l'ère Primaire."], ["Ammonite", "Mollusque fossile à coquille enroulée fréquent dans l'ère Secondaire."], ["OGM", "Organisme Génétiquement Modifié."]
+                    ["Cellule", "Unité microscopique structurelle et fonctionnelle de tout être vivant."], ["Membrane", "Enveloppe qui délimite la cellule."], ["Cytoplasme", "Gelée interne de la cellule contenant les organites."], ["Noyau", "Partie de la cellule contenant l'information génétique (ADN)."], ["Unicellulaire", "Être vivant constitué d'une seule cellule."], ["Pluricellulaire", "Être vivant constitué de plusieurs cellules."], ["Espèce", "Groupe d'êtres vivants se ressemblant et pouvant se reproduire entre eux."], ["Évolution", "Transformation des espèces au cours du temps (générations)."], ["Sélection naturelle", "Avantage reproductif des individus les mieux adaptés à leur milieu."], ["Ancêtre commun", "Organisme hypothétique dont descendent plusieurs espèces actuelles."], ["Arbre de parenté", "Schéma montrant les liens de parenté entre les espèces (phylogénie)."], ["Caractère", "Trait physique ou physiologique d'un individu (ex : couleur des yeux)."], ["Héréditaire", "Qui se transmet des parents aux descendants."], ["ADN", "Molécule en forme de double hélice portant l'information génétique."], ["Chromosome", "Filament d'ADN visible lors de la division cellulaire."], ["Gène", "Portion d'ADN portant l'information d'un caractère précis."], ["Allèle", "Version possible d'un gène (ex : allèle bleu ou marron)."], ["Caryotype", "Classement ordonné des chromosomes d'une cellule."], ["Génotype", "Ensemble des allèles d'un individu."], ["Phénotype", "Ensemble des caractères observables d'un individu."], ["Mutation", "Modification accidentelle de la séquence d'ADN."], ["Mitose", "Division cellulaire conforme (2 cellules identiques)."], ["Méiose", "Division cellulaire produisant les gamètes (réduction du nombre de chromosomes)."], ["Gamète", "Cellule reproductrice (spermatozoïde ou ovule)."], ["Fécondation", "Fusion d'un spermatozoïde et d'un ovule."], ["Cellule-œuf", "Première cellule d'un nouvel individu après fécondation."], ["Reproduction sexuée", "Reproduction nécessitant deux parents et des gamètes."], ["Reproduction asexuée", "Reproduction sans gamètes (bouturage, division)."], ["Puberté", "Période de transition de l'enfance à l'âge adulte (capacité reproductrice)."], ["Hormone", "Messager chimique transporté par le sang."], ["Ovaire", "Organe producteur des ovules et d'hormones féminines."], ["Testicule", "Organe producteur des spermatozoïdes et de testostérone."], ["Contraception", "Méthodes temporaires pour éviter une grossesse."], ["Placenta", "Organe d'échanges entre la mère et le fœtus."], ["Photosynthèse", "Production de matière organique par les plantes à la lumière."], ["Chlorophylle", "Pigment vert des plantes captant l'énergie lumineuse."], ["Stomate", "Orifice sur les feuilles permettant les échanges gazeux."], ["Sève brute", "Eau et sels minéraux montant des racines."], ["Sève élaborée", "Eau et matière organique (sucre) circulant dans la plante."], ["Symbiose", "Association durable et bénéfique entre deux êtres vivants."], ["Mycorhize", "Symbiose entre un champignon et les racines d'une plante."], ["Matière organique", "Matière produite par les vivants (riche en carbone)."], ["Matière minérale", "Matière inerte (eau, roches, sels minéraux)."], ["Décomposeur", "Organisme qui transforme la matière organique en matière minérale."], ["Réseau trophique", "Ensemble des chaînes alimentaires reliées entre elles."], ["Producteur primaire", "Végétal chlorophyllien premier maillon de la chaîne alimentaire."], ["Crise biologique", "Extinction massive d'espèces sur une courte période géologique."], ["Trilobite", "Arthropode marin fossile fréquent dans l'ère Primaire."], ["Ammonite", "Mollusque fossile à coquille enroulée fréquent dans l'ère Secondaire."], ["OGM", "Organisme Génétiquement Modifié."]
                 ]},
                 { title: "T3 : Le Corps Humain et Santé", data: [
-                    ["Nutriment", "Élément soluble issu de la digestion des aliments."], ["Enzyme", "Substance chimique accélérant la digestion (coupe les molécules)."], ["Digestion", "Transformation des aliments en nutriments."], ["Absorption", "Passage des nutriments de l'intestin vers le sang."], ["Intestin grêle", "Lieu principal de la digestion et de l'absorption."], ["Microbiote", "Ensemble des micro-organismes vivant dans notre corps (bactéries)."], ["Villosité", "Repli microscopique de l'intestin augmentant la surface d'absorption."], ["Respiration", "Échanges gazeux (O2 / CO2) pour produire de l'énergie."], ["Alvéole pulmonaire", "Petit sac d'air où se font les échanges gazeux avec le sang.", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Alveoli_diagram-fr.svg/512px-Alveoli_diagram-fr.svg.png"], ["Ventilation", "Mouvements respiratoires (inspiration/expiration)."], ["Cœur", "Muscle creux propulsant le sang dans l'organisme."], ["Artère", "Vaisseau sanguin qui part du cœur (haute pression)."], ["Veine", "Vaisseau sanguin qui revient au cœur (basse pression)."], ["Capillaire", "Vaisseau très fin lieu des échanges avec les organes."], ["Plasma", "Partie liquide du sang transportant nutriments et déchets."], ["Hématie", "Globule rouge transportant le dioxygène."], ["Leucocyte", "Globule blanc défendant l'organisme."], ["Système nerveux", "Ensemble des nerfs et centres nerveux gérant les informations."], ["Neurone", "Cellule spécialisée du système nerveux."], ["Synapse", "Zone de connexion chimique entre deux neurones.", "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Chemical_synapse_schema_cropped.jpg/512px-Chemical_synapse_schema_cropped.jpg"], ["Neurotransmetteur", "Messager chimique traversant la synapse."], ["Nerf", "Câble formé de fibres nerveuses reliant les organes aux centres nerveux."], ["Cerveau", "Centre nerveux principal situé dans le crâne."], ["Récepteur sensoriel", "Organe captant une stimulation (œil, oreille, peau...)."], ["Aire cérébrale", "Zone du cerveau spécialisée dans une fonction précise."], ["Micro-organisme", "Être vivant invisible à l'œil nu (microbe)."], ["Pathogène", "Qui peut provoquer une maladie."], ["Bactérie", "Micro-organisme unicellulaire sans noyau (procaryote)."], ["Virus", "Particule infectieuse nécessitant une cellule pour se multiplier."], ["Contamination", "Pénétration des micro-organismes dans le corps."], ["Infection", "Multiplication des micro-organismes dans le corps."], ["Asepsie", "Méthode préventive pour éviter tout contact avec des microbes (stérile)."], ["Antisepsie", "Méthode pour détruire les microbes sur une plaie (désinfectant)."], ["Système immunitaire", "Ensemble des défenses de l'organisme."], ["Phagocytose", "Digestion rapide des microbes par certains leucocytes.", "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Phagocytosis_stages.svg/512px-Phagocytosis_stages.svg.png"], ["Antigène", "Molécule étrangère déclenchant une réaction immunitaire."], ["Anticorps", "Molécule en Y produite pour neutraliser un antigène précis."], ["Lymphocyte B", "Leucocyte producteur d'anticorps."], ["Lymphocyte T", "Leucocyte destructeur de cellules infectées (baiser de la mort)."], ["Mémoire immunitaire", "Capacité du corps à réagir plus vite lors d'un second contact."], ["Vaccination", "Injection d'antigènes inoffensifs pour créer une mémoire immunitaire."], ["Antibiotique", "Médicament tuant les bactéries (inefficace sur les virus)."], ["Dopage", "Utilisation de substances interdites pour améliorer les performances."], ["Addiction", "Dépendance nocive à une substance ou une activité."], ["Bruit", "Son fort ou prolongé pouvant endommager l'oreille."], ["Système cardiovasculaire", "Ensemble cœur et vaisseaux sanguins."], ["Glucide", "Sucre, principale source d'énergie rapide."], ["Lipide", "Gras, source d'énergie de réserve et constituant cellulaire."], ["Protéine", "Molécule bâtisseuse des muscles et tissus."], ["IMC", "Indice de Masse Corporelle (poids / taille²)."]
+                    ["Nutriment", "Élément soluble issu de la digestion des aliments."], ["Enzyme", "Substance chimique accélérant la digestion (coupe les molécules)."], ["Digestion", "Transformation des aliments en nutriments."], ["Absorption", "Passage des nutriments de l'intestin vers le sang."], ["Intestin grêle", "Lieu principal de la digestion et de l'absorption."], ["Microbiote", "Ensemble des micro-organismes vivant dans notre corps (bactéries)."], ["Villosité", "Repli microscopique de l'intestin augmentant la surface d'absorption."], ["Respiration", "Échanges gazeux (O2 / CO2) pour produire de l'énergie."], ["Alvéole pulmonaire", "Petit sac d'air où se font les échanges gazeux avec le sang."], ["Ventilation", "Mouvements respiratoires (inspiration/expiration)."], ["Cœur", "Muscle creux propulsant le sang dans l'organisme."], ["Artère", "Vaisseau sanguin qui part du cœur (haute pression)."], ["Veine", "Vaisseau sanguin qui revient au cœur (basse pression)."], ["Capillaire", "Vaisseau très fin lieu des échanges avec les organes."], ["Plasma", "Partie liquide du sang transportant nutriments et déchets."], ["Hématie", "Globule rouge transportant le dioxygène."], ["Leucocyte", "Globule blanc défendant l'organisme."], ["Système nerveux", "Ensemble des nerfs et centres nerveux gérant les informations."], ["Neurone", "Cellule spécialisée du système nerveux."], ["Synapse", "Zone de connexion chimique entre deux neurones."], ["Neurotransmetteur", "Messager chimique traversant la synapse."], ["Nerf", "Câble formé de fibres nerveuses reliant les organes aux centres nerveux."], ["Cerveau", "Centre nerveux principal situé dans le crâne."], ["Récepteur sensoriel", "Organe captant une stimulation (œil, oreille, peau...)."], ["Aire cérébrale", "Zone du cerveau spécialisée dans une fonction précise."], ["Micro-organisme", "Être vivant invisible à l'œil nu (microbe)."], ["Pathogène", "Qui peut provoquer une maladie."], ["Bactérie", "Micro-organisme unicellulaire sans noyau (procaryote)."], ["Virus", "Particule infectieuse nécessitant une cellule pour se multiplier."], ["Contamination", "Pénétration des micro-organismes dans le corps."], ["Infection", "Multiplication des micro-organismes dans le corps."], ["Asepsie", "Méthode préventive pour éviter tout contact avec des microbes (stérile)."], ["Antisepsie", "Méthode pour détruire les microbes sur une plaie (désinfectant)."], ["Système immunitaire", "Ensemble des défenses de l'organisme."], ["Phagocytose", "Digestion rapide des microbes par certains leucocytes."], ["Antigène", "Molécule étrangère déclenchant une réaction immunitaire."], ["Anticorps", "Molécule en Y produite pour neutraliser un antigène précis."], ["Lymphocyte B", "Leucocyte producteur d'anticorps."], ["Lymphocyte T", "Leucocyte destructeur de cellules infectées (baiser de la mort)."], ["Mémoire immunitaire", "Capacité du corps à réagir plus vite lors d'un second contact."], ["Vaccination", "Injection d'antigènes inoffensifs pour créer une mémoire immunitaire."], ["Antibiotique", "Médicament tuant les bactéries (inefficace sur les virus)."], ["Dopage", "Utilisation de substances interdites pour améliorer les performances."], ["Addiction", "Dépendance nocive à une substance ou une activité."], ["Bruit", "Son fort ou prolongé pouvant endommager l'oreille."], ["Système cardiovasculaire", "Ensemble cœur et vaisseaux sanguins."], ["Glucide", "Sucre, principale source d'énergie rapide."], ["Lipide", "Gras, source d'énergie de réserve et constituant cellulaire."], ["Protéine", "Molécule bâtisseuse des muscles et tissus."], ["IMC", "Indice de Masse Corporelle (poids / taille²)."]
                 ]},
-                { title: "🎓 MODE BREVET (Tout mélangé)", data: [] }
+                { title: "   MODE BREVET (Tout mélangé)", data: [] }
             ]
         }
     };
@@ -193,7 +186,7 @@
                 ...FULL_DB['cycle4'].themes[1].data,
                 ...FULL_DB['cycle4'].themes[2].data
             ];
-            document.getElementById('words-area').innerHTML = "<em>Mode Brevet activé (150 mots). Cliquez sur DÉMARRER LE QUIZ !</em>";
+            document.getElementById('words-area').innerHTML = "<em>Mode Brevet activé (150 mots). Clique sur DÉMARRER LE QUIZ pour t'entraîner sur tout le programme !</em>";
         } else {
             currentThemeData = themeObj.data;
             const area = document.getElementById('words-area');
@@ -203,11 +196,8 @@
                 div.className = 'word';
                 div.innerText = item[0];
                 div.onclick = () => {
-                    let html = `<strong>${item[0]}</strong> &nbsp;:&nbsp; <span style="font-size:0.95em; font-weight:normal">${item[1]}</span>`;
-                    if(item[2]) {
-                        html += `<img src="${item[2]}" alt="${item[0]}">`;
-                    }
-                    document.getElementById('display-panel').innerHTML = html;
+                    // ESPACES AJOUTÉS AUTOUR DES DEUX POINTS
+                    document.getElementById('display-panel').innerHTML = `<strong>${item[0]}</strong> &nbsp;:&nbsp; <span style="font-size:0.95em; font-weight:normal">${item[1]}</span>`;
                 };
                 area.appendChild(div);
             });
@@ -222,39 +212,38 @@
     function resetQuizUI() {
         clearInterval(timerInterval);
         gameActive = false; score = 0; timeLeft = 60;
-        document.getElementById('score-ui').innerText = "🧬 0";
-        document.getElementById('timer-ui').innerText = "⏱️ 60s";
+        document.getElementById('score-ui').innerText = "   0";
+        document.getElementById('timer-ui').innerText = "   60s";
         document.getElementById('quiz-input').value = "";
         document.getElementById('quiz-input').className = "";
         document.getElementById('quiz-input').disabled = true;
         document.getElementById('start-btn').style.display = "inline-block";
-        document.getElementById('start-btn').innerText = "DÉMARRER LE QUIZ";
         document.getElementById('quiz-definition').innerText = "Lance le quiz pour t'entraîner !";
     }
 
     function startGame() {
-        if(!currentThemeData.length) return alert("Choisis un thème d'abord !");
-        
-        // REINITIALISATION COMPLÈTE
-        gameActive = true;
-        score = 0;
-        timeLeft = 60;
-        document.getElementById('score-ui').innerText = "🧬 0";
-        document.getElementById('timer-ui').innerText = "⏱️ 60s";
-        document.getElementById('start-btn').style.display = "none";
-        document.getElementById('quiz-input').disabled = false;
-        document.getElementById('quiz-input').value = "";
-        document.getElementById('quiz-input').focus();
-        
-        nextQuestion();
+    if(!currentThemeData.length) return alert("Choisis un thème d'abord !");
+    
+    // REINITIALISATION ICI
+    gameActive = true;
+    score = 0;
+    timeLeft = 60;
+    document.getElementById('score-ui').innerText = "   0";
+    document.getElementById('timer-ui').innerText = "   60s";
+    
+    document.getElementById('start-btn').style.display = "none";
+    document.getElementById('quiz-input').disabled = false;
+    document.getElementById('quiz-input').focus();
+    nextQuestion();
 
-        if(timerInterval) clearInterval(timerInterval);
-        timerInterval = setInterval(() => {
-            timeLeft--;
-            document.getElementById('timer-ui').innerText = "⏱️ " + timeLeft + "s";
-            if(timeLeft <= 0) endGame();
-        }, 1000);
-    }
+    // On efface un éventuel intervalle encore actif avant d'en créer un nouveau
+    clearInterval(timerInterval); 
+    timerInterval = setInterval(() => {
+        timeLeft--;
+        document.getElementById('timer-ui').innerText = "   " + timeLeft + "s";
+        if(timeLeft <= 0) endGame();
+    }, 1000);
+}
 
     function nextQuestion() {
         const rand = Math.floor(Math.random() * currentThemeData.length);
@@ -269,7 +258,7 @@
         let val = e.target.value.toLowerCase().trim().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
         if(val === currentTarget) {
             score++;
-            document.getElementById('score-ui').innerText = "🧬 " + score;
+            document.getElementById('score-ui').innerText = "   " + score;
             e.target.className = "correct";
             setTimeout(nextQuestion, 400);
         }
@@ -279,9 +268,9 @@
         clearInterval(timerInterval);
         gameActive = false;
         document.getElementById('quiz-input').disabled = true;
-        document.getElementById('quiz-definition').innerHTML = `🏁 <strong>TERMINÉ !</strong> Score final : ${score} points.`;
+        document.getElementById('quiz-definition').innerHTML = `   <strong>TERMINÉ !</strong> Score final : ${score} points.`;
         document.getElementById('start-btn').style.display = "inline-block";
-        document.getElementById('start-btn').innerText = "RÉESSAYER";
+        document.getElementById('start-btn').innerText = "REESSAYER";
     }
 </script>
 </body>
